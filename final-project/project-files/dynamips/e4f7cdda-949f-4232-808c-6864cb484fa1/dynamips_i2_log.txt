@@ -1,0 +1,195 @@
+Jan 18 10:20:28.075 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 18 10:20:28.075 HYPERVISOR: Started on IP = localhost, TCP port = 47101.
+Jan 18 10:20:28.085 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 18 10:20:28.085 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 18 10:20:28.086 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 18 10:20:28.086 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/e4f7cdda-949f-4232-808c-6864cb484fa1 
+Jan 18 10:20:28.086 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/e4f7cdda-949f-4232-808c-6864cb484fa1
+Jan 18 10:20:28.086 HYPERVISOR: exec_cmd: vm create Heywood 2 c7200 
+Jan 18 10:20:28.086 VM: VM Heywood created.
+Jan 18 10:20:28.086 HYPERVISOR: exec_cmd: vm set_con_tcp_port Heywood 5001 
+Jan 18 10:20:28.086 HYPERVISOR: exec_cmd: c7200 get_mac_addr Heywood 
+Jan 18 10:20:28.086 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 10:20:28.086 HYPERVISOR: exec_cmd: vm slot_add_binding Heywood 0 0 C7200-IO-FE 
+Jan 18 10:20:28.087 HYPERVISOR: exec_cmd: vm set_disk0 Heywood 0 
+Jan 18 10:20:28.087 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 10:20:28.087 HYPERVISOR: exec_cmd: vm set_idle_pc Heywood 0x6318687c 
+Jan 18 10:20:28.087 HYPERVISOR: exec_cmd: vm set_ios Heywood /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 10:20:28.088 HYPERVISOR: exec_cmd: c7200 set_mac_addr Heywood ca02.2134.0000 
+Jan 18 10:20:28.088 HYPERVISOR: exec_cmd: vm set_nvram Heywood 512 
+Jan 18 10:20:28.088 HYPERVISOR: exec_cmd: vm set_ram Heywood 512 
+Jan 18 10:20:28.088 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 10:20:28.088 HYPERVISOR: exec_cmd: vm slot_remove_binding Heywood 0 0 
+Jan 18 10:20:28.088 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 10:20:28.089 HYPERVISOR: exec_cmd: vm slot_add_binding Heywood 0 0 C7200-IO-2FE 
+Jan 18 10:20:28.089 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 10:20:28.089 HYPERVISOR: exec_cmd: vm slot_add_binding Heywood 1 0 PA-2FE-TX 
+Jan 18 10:20:29.970 HYPERVISOR: exec_cmd: nio create_udp udp-9be0a340-323d-4e07-9a37-85e597080b6a 10008 127.0.0.1 10009 
+Jan 18 10:20:30.187 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Heywood 0 0 udp-9be0a340-323d-4e07-9a37-85e597080b6a 
+Jan 18 10:20:30.188 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 10:20:30.577 HYPERVISOR: exec_cmd: nio create_udp udp-e94a97f2-fb2c-4a5d-97ca-331b81ac4aeb 10020 127.0.0.1 10021 
+Jan 18 10:20:30.578 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Heywood 0 1 udp-e94a97f2-fb2c-4a5d-97ca-331b81ac4aeb 
+Jan 18 10:20:30.578 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 10:20:56.116 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 10:20:56.117 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 10:20:56.118 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 10:20:56.119 HYPERVISOR: exec_cmd: vm set_config Heywood configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Jan 18 10:20:56.119 HYPERVISOR: exec_cmd: vm start Heywood 
+Jan 18 10:21:26.349 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 10:22:26.357 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 10:48:15.418 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 10:48:15.424 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 10:48:15.430 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 11:05:56.622 HYPERVISOR: exec_cmd: vm set_ios Heywood /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 11:06:23.851 HYPERVISOR: exec_cmd: vm set_ios Heywood /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 11:09:32.319 HYPERVISOR: exec_cmd: vm set_ios Heywood /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 11:10:31.624 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 11:10:31.629 HYPERVISOR: exec_cmd: vm stop Heywood 
+Jan 18 11:10:31.759 VM: VM Heywood shutdown.
+Jan 18 11:10:31.767 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 11:10:40.057 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 11:10:40.060 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:10:40.061 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 11:10:40.063 HYPERVISOR: exec_cmd: vm set_config Heywood configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Jan 18 11:10:40.064 HYPERVISOR: exec_cmd: vm start Heywood 
+Jan 18 11:14:21.436 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 11:14:21.439 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:14:21.443 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 11:30:36.990 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 11:30:36.994 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:30:36.996 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 11:42:29.933 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 11:42:29.933 HYPERVISOR: exec_cmd: vm stop Heywood 
+Jan 18 11:42:30.033 VM: VM Heywood shutdown.
+Jan 18 11:42:30.040 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 11:42:55.735 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 11:42:55.744 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:42:55.746 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 11:42:55.749 HYPERVISOR: exec_cmd: vm set_config Heywood configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Jan 18 11:42:55.751 HYPERVISOR: exec_cmd: vm start Heywood 
+Jan 18 11:49:54.690 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 11:49:54.690 HYPERVISOR: exec_cmd: vm stop Heywood 
+Jan 18 11:49:54.808 VM: VM Heywood shutdown.
+Jan 18 11:49:54.813 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 11:49:59.573 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 11:49:59.573 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:49:59.574 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 11:49:59.574 HYPERVISOR: exec_cmd: vm set_config Heywood configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Jan 18 11:49:59.575 HYPERVISOR: exec_cmd: vm start Heywood 
+Jan 18 12:00:20.440 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 12:00:20.441 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 12:00:20.443 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 12:10:16.403 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 12:10:16.404 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 12:10:16.406 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 12:21:28.143 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 12:21:28.144 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 12:21:28.145 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 12:25:06.820 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 12:25:06.822 HYPERVISOR: exec_cmd: vm stop Heywood 
+Jan 18 12:25:06.954 VM: VM Heywood shutdown.
+Jan 18 12:25:06.975 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 12:25:17.108 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 12:25:17.119 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 12:25:17.122 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 12:25:17.125 HYPERVISOR: exec_cmd: vm set_config Heywood configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Jan 18 12:25:17.128 HYPERVISOR: exec_cmd: vm start Heywood 
+Jan 18 14:41:34.753 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 14:41:34.756 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 14:41:34.763 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 15:12:25.871 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 15:12:25.883 HYPERVISOR: exec_cmd: vm stop Heywood 
+Jan 18 15:12:25.988 VM: VM Heywood shutdown.
+Jan 18 15:12:25.988 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 15:12:32.821 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 15:12:32.823 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 15:12:32.824 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 15:12:32.836 HYPERVISOR: exec_cmd: vm set_config Heywood configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Jan 18 15:12:32.838 HYPERVISOR: exec_cmd: vm start Heywood 
+Jan 18 15:14:10.668 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 15:14:10.669 HYPERVISOR: exec_cmd: vm stop Heywood 
+Jan 18 15:14:10.784 VM: VM Heywood shutdown.
+Jan 18 15:14:10.791 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 15:17:52.184 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 15:17:52.187 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 15:17:52.189 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 15:17:52.191 HYPERVISOR: exec_cmd: vm set_config Heywood configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Jan 18 15:17:52.192 HYPERVISOR: exec_cmd: vm start Heywood 
+Jan 18 15:20:34.359 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 15:20:34.361 HYPERVISOR: exec_cmd: vm stop Heywood 
+Jan 18 15:20:34.470 VM: VM Heywood shutdown.
+Jan 18 15:20:34.472 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 15:21:00.797 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 15:21:00.801 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 15:21:00.803 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 15:21:00.806 HYPERVISOR: exec_cmd: vm set_config Heywood configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Jan 18 15:21:00.807 HYPERVISOR: exec_cmd: vm start Heywood 
+Jan 18 16:01:01.226 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 16:01:31.226 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 16:02:01.231 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 17:11:34.249 HYPERVISOR: exec_cmd: nio bind_filter udp-e94a97f2-fb2c-4a5d-97ca-331b81ac4aeb 2 capture 
+Jan 18 17:11:34.255 HYPERVISOR: exec_cmd: nio setup_filter udp-e94a97f2-fb2c-4a5d-97ca-331b81ac4aeb 2 en10mb /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/captures/Heywood_FastEthernet01_to_SantoDomingo_FastEthernet01.pcap 
+Jan 18 19:16:23.973 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 19:16:23.986 HYPERVISOR: exec_cmd: vm stop Heywood 
+Jan 18 19:16:24.087 VM: VM Heywood shutdown.
+Jan 18 19:16:24.087 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 19:16:24.105 HYPERVISOR: exec_cmd: nio unbind_filter udp-e94a97f2-fb2c-4a5d-97ca-331b81ac4aeb 2 
+Jan 18 19:16:36.815 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 19:16:36.827 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 19:16:36.828 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 19:16:36.828 HYPERVISOR: exec_cmd: vm set_config Heywood configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Jan 18 19:16:36.829 HYPERVISOR: exec_cmd: vm start Heywood 
+Jan 18 19:19:41.427 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 19:19:41.438 HYPERVISOR: exec_cmd: vm stop Heywood 
+Jan 18 19:19:41.570 VM: VM Heywood shutdown.
+Jan 18 19:19:41.571 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 19:20:12.854 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 19:20:12.858 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 19:20:12.859 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 19:20:12.860 HYPERVISOR: exec_cmd: vm set_config Heywood configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Jan 18 19:20:12.861 HYPERVISOR: exec_cmd: vm start Heywood 
+Jan 18 19:20:46.730 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 19:20:46.735 HYPERVISOR: exec_cmd: vm stop Heywood 
+Jan 18 19:20:46.855 VM: VM Heywood shutdown.
+Jan 18 19:20:46.863 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 19:21:32.588 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 19:21:32.594 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 19:21:32.596 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 19:21:32.599 HYPERVISOR: exec_cmd: vm set_config Heywood configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Jan 18 19:21:32.603 HYPERVISOR: exec_cmd: vm start Heywood 
+Jan 18 20:13:29.426 HYPERVISOR: exec_cmd: nio bind_filter udp-9be0a340-323d-4e07-9a37-85e597080b6a 2 capture 
+Jan 18 20:13:29.438 HYPERVISOR: exec_cmd: nio setup_filter udp-9be0a340-323d-4e07-9a37-85e597080b6a 2 en10mb /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/captures/Heywood_FastEthernet00_to_OpA_Core_FastEthernet01.pcap 
+Jan 18 20:21:58.936 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 20:21:58.948 HYPERVISOR: exec_cmd: vm stop Heywood 
+Jan 18 20:21:59.062 VM: VM Heywood shutdown.
+Jan 18 20:21:59.063 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 20:21:59.084 HYPERVISOR: exec_cmd: nio unbind_filter udp-9be0a340-323d-4e07-9a37-85e597080b6a 2 
+Jan 18 20:23:16.503 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 20:23:16.506 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 20:23:16.507 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 20:23:16.519 HYPERVISOR: exec_cmd: vm set_config Heywood configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Jan 18 20:23:16.520 HYPERVISOR: exec_cmd: vm start Heywood 
+Jan 18 20:31:35.354 HYPERVISOR: exec_cmd: nio bind_filter udp-e94a97f2-fb2c-4a5d-97ca-331b81ac4aeb 2 capture 
+Jan 18 20:31:35.355 HYPERVISOR: exec_cmd: nio setup_filter udp-e94a97f2-fb2c-4a5d-97ca-331b81ac4aeb 2 en10mb /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/captures/Heywood_FastEthernet01_to_SantoDomingo_FastEthernet01.pcap 
+Jan 18 20:58:52.547 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 20:58:52.562 HYPERVISOR: exec_cmd: vm stop Heywood 
+Jan 18 20:58:52.683 VM: VM Heywood shutdown.
+Jan 18 20:58:52.684 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 20:58:52.716 HYPERVISOR: exec_cmd: nio unbind_filter udp-e94a97f2-fb2c-4a5d-97ca-331b81ac4aeb 2 
+Jan 18 21:41:32.303 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 21:41:32.308 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 21:41:32.310 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 21:41:32.315 HYPERVISOR: exec_cmd: vm set_config Heywood configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Jan 18 21:41:32.317 HYPERVISOR: exec_cmd: vm start Heywood 
+Jan 18 22:15:02.489 HYPERVISOR: exec_cmd: vm set_ghost_status Heywood 2 
+Jan 18 22:15:02.492 HYPERVISOR: exec_cmd: vm set_ghost_file Heywood /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 22:15:02.493 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 22:40:35.833 HYPERVISOR: exec_cmd: vm get_status Heywood 
+Jan 18 22:40:35.842 HYPERVISOR: exec_cmd: vm stop Heywood 
+Jan 18 22:40:36.013 VM: VM Heywood shutdown.
+Jan 18 22:40:36.015 HYPERVISOR: exec_cmd: vm extract_config Heywood 
+Jan 18 22:40:36.019 HYPERVISOR: exec_cmd: vm delete Heywood 
+Jan 18 22:40:36.020 VM: VM Heywood destroyed.
+Jan 18 22:40:36.024 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 18 22:40:36.440 HYPERVISOR: Stopped.
+Jan 18 22:40:36.440 GENERAL: reset done.

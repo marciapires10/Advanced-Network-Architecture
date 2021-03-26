@@ -1,0 +1,12 @@
+Jan 25 11:36:23.815 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 25 11:36:23.815 HYPERVISOR: Started on IP = localhost, TCP port = 56679.
+Jan 25 11:36:23.826 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 11:36:23.826 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 25 11:36:23.826 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 25 11:36:23.826 HYPERVISOR: exec_cmd: ethsw create OpA_MN 
+Jan 25 11:36:29.418 HYPERVISOR: exec_cmd: nio create_udp udp-f3ef0550-2851-44bc-8a93-ddfb397c570b 10073 127.0.0.1 10072 
+Jan 25 11:36:29.418 HYPERVISOR: exec_cmd: ethsw add_nio OpA_MN udp-f3ef0550-2851-44bc-8a93-ddfb397c570b 
+Jan 25 11:36:29.420 HYPERVISOR: exec_cmd: ethsw set_access_port OpA_MN udp-f3ef0550-2851-44bc-8a93-ddfb397c570b 1 
+Jan 25 11:36:29.552 HYPERVISOR: exec_cmd: nio create_udp udp-b7e4273d-a98d-4eb3-8931-4114b5527e24 10076 127.0.0.1 10077 
+Jan 25 11:36:29.553 HYPERVISOR: exec_cmd: ethsw add_nio OpA_MN udp-b7e4273d-a98d-4eb3-8931-4114b5527e24 
+Jan 25 11:36:29.561 HYPERVISOR: exec_cmd: ethsw set_access_port OpA_MN udp-b7e4273d-a98d-4eb3-8931-4114b5527e24 1 

@@ -1,0 +1,188 @@
+Jan 18 10:20:28.130 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 18 10:20:28.130 HYPERVISOR: Started on IP = localhost, TCP port = 37671.
+Jan 18 10:20:28.140 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 18 10:20:28.140 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 18 10:20:28.140 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 18 10:20:28.140 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/a098ca4a-e558-4b6e-b04c-821ff593395f 
+Jan 18 10:20:28.140 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/a098ca4a-e558-4b6e-b04c-821ff593395f
+Jan 18 10:20:28.140 HYPERVISOR: exec_cmd: vm create SantoDomingo 4 c7200 
+Jan 18 10:20:28.141 VM: VM SantoDomingo created.
+Jan 18 10:20:28.141 HYPERVISOR: exec_cmd: vm set_con_tcp_port SantoDomingo 5003 
+Jan 18 10:20:28.141 HYPERVISOR: exec_cmd: c7200 get_mac_addr SantoDomingo 
+Jan 18 10:20:28.141 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 10:20:28.141 HYPERVISOR: exec_cmd: vm slot_add_binding SantoDomingo 0 0 C7200-IO-FE 
+Jan 18 10:20:28.141 HYPERVISOR: exec_cmd: vm set_disk0 SantoDomingo 0 
+Jan 18 10:20:28.142 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 10:20:28.142 HYPERVISOR: exec_cmd: vm set_idle_pc SantoDomingo 0x6318687c 
+Jan 18 10:20:28.142 HYPERVISOR: exec_cmd: vm set_ios SantoDomingo /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 10:20:28.142 HYPERVISOR: exec_cmd: c7200 set_mac_addr SantoDomingo ca04.2168.0000 
+Jan 18 10:20:28.143 HYPERVISOR: exec_cmd: vm set_nvram SantoDomingo 512 
+Jan 18 10:20:28.143 HYPERVISOR: exec_cmd: vm set_ram SantoDomingo 512 
+Jan 18 10:20:28.143 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 10:20:28.143 HYPERVISOR: exec_cmd: vm slot_remove_binding SantoDomingo 0 0 
+Jan 18 10:20:28.143 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 10:20:28.143 HYPERVISOR: exec_cmd: vm slot_add_binding SantoDomingo 0 0 C7200-IO-2FE 
+Jan 18 10:20:28.143 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 10:20:28.144 HYPERVISOR: exec_cmd: vm slot_add_binding SantoDomingo 1 0 PA-2FE-TX 
+Jan 18 10:20:30.584 HYPERVISOR: exec_cmd: nio create_udp udp-2980a58c-0d5b-4577-b1e0-0af7c1755de1 10022 127.0.0.1 10023 
+Jan 18 10:20:30.794 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SantoDomingo 0 1 udp-2980a58c-0d5b-4577-b1e0-0af7c1755de1 
+Jan 18 10:20:30.795 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 10:20:31.170 HYPERVISOR: exec_cmd: nio create_udp udp-3298ea86-8cbc-4cd7-921a-3b94b5691cd4 10032 127.0.0.1 10033 
+Jan 18 10:20:31.171 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SantoDomingo 0 0 udp-3298ea86-8cbc-4cd7-921a-3b94b5691cd4 
+Jan 18 10:20:31.171 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 10:20:56.333 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 10:20:56.334 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 10:20:56.334 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 10:20:56.335 HYPERVISOR: exec_cmd: vm set_config SantoDomingo configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+Jan 18 10:20:56.335 HYPERVISOR: exec_cmd: vm start SantoDomingo 
+Jan 18 10:21:26.570 HYPERVISOR: exec_cmd: vm extract_config SantoDomingo 
+Jan 18 10:22:26.585 HYPERVISOR: exec_cmd: vm extract_config SantoDomingo 
+Jan 18 10:48:15.435 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 10:48:15.439 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 10:48:15.443 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 11:05:55.363 HYPERVISOR: exec_cmd: vm set_ios SantoDomingo /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 11:06:22.741 HYPERVISOR: exec_cmd: vm set_ios SantoDomingo /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 11:09:31.206 HYPERVISOR: exec_cmd: vm set_ios SantoDomingo /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 11:10:31.766 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 11:10:31.767 HYPERVISOR: exec_cmd: vm stop SantoDomingo 
+Jan 18 11:10:31.875 VM: VM SantoDomingo shutdown.
+Jan 18 11:10:31.877 HYPERVISOR: exec_cmd: vm extract_config SantoDomingo 
+Jan 18 11:10:40.307 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 11:10:40.308 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:10:40.308 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 11:10:40.309 HYPERVISOR: exec_cmd: vm set_config SantoDomingo configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+Jan 18 11:10:40.309 HYPERVISOR: exec_cmd: vm start SantoDomingo 
+Jan 18 11:14:21.450 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 11:14:21.454 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:14:21.456 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 11:30:37.004 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 11:30:37.010 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:30:37.014 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 11:42:30.040 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 11:42:30.040 HYPERVISOR: exec_cmd: vm stop SantoDomingo 
+Jan 18 11:42:30.136 VM: VM SantoDomingo shutdown.
+Jan 18 11:42:30.137 HYPERVISOR: exec_cmd: vm extract_config SantoDomingo 
+Jan 18 11:42:55.976 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 11:42:55.977 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:42:55.977 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 11:42:55.977 HYPERVISOR: exec_cmd: vm set_config SantoDomingo configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+Jan 18 11:42:55.977 HYPERVISOR: exec_cmd: vm start SantoDomingo 
+Jan 18 11:49:54.840 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 11:49:54.842 HYPERVISOR: exec_cmd: vm stop SantoDomingo 
+Jan 18 11:49:54.953 VM: VM SantoDomingo shutdown.
+Jan 18 11:49:54.956 HYPERVISOR: exec_cmd: vm extract_config SantoDomingo 
+Jan 18 11:49:59.784 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 11:49:59.785 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:49:59.785 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 11:49:59.786 HYPERVISOR: exec_cmd: vm set_config SantoDomingo configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+Jan 18 11:49:59.786 HYPERVISOR: exec_cmd: vm start SantoDomingo 
+Jan 18 12:00:20.448 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 12:00:20.450 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 12:00:20.451 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 12:10:16.428 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 12:10:16.431 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 12:10:16.436 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 12:20:08.802 HYPERVISOR: exec_cmd: nio bind_filter udp-3298ea86-8cbc-4cd7-921a-3b94b5691cd4 2 capture 
+Jan 18 12:20:08.802 HYPERVISOR: exec_cmd: nio setup_filter udp-3298ea86-8cbc-4cd7-921a-3b94b5691cd4 2 en10mb /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/captures/SantoDomingo_FastEthernet00_to_OpB_Core_FastEthernet01.pcap 
+Jan 18 12:21:28.149 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 12:21:28.150 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 12:21:28.151 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 12:25:06.975 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 12:25:06.976 HYPERVISOR: exec_cmd: vm stop SantoDomingo 
+Jan 18 12:25:07.077 VM: VM SantoDomingo shutdown.
+Jan 18 12:25:07.078 HYPERVISOR: exec_cmd: vm extract_config SantoDomingo 
+Jan 18 12:25:07.093 HYPERVISOR: exec_cmd: nio unbind_filter udp-3298ea86-8cbc-4cd7-921a-3b94b5691cd4 2 
+Jan 18 12:25:17.369 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 12:25:17.370 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 12:25:17.371 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 12:25:17.371 HYPERVISOR: exec_cmd: vm set_config SantoDomingo configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+Jan 18 12:25:17.372 HYPERVISOR: exec_cmd: vm start SantoDomingo 
+Jan 18 14:41:34.777 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 14:41:34.778 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 14:41:34.780 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 15:12:25.990 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 15:12:25.997 HYPERVISOR: exec_cmd: vm stop SantoDomingo 
+Jan 18 15:12:26.116 VM: VM SantoDomingo shutdown.
+Jan 18 15:12:26.119 HYPERVISOR: exec_cmd: vm extract_config SantoDomingo 
+Jan 18 15:12:33.053 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 15:12:33.053 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 15:12:33.054 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 15:12:33.054 HYPERVISOR: exec_cmd: vm set_config SantoDomingo configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+Jan 18 15:12:33.054 HYPERVISOR: exec_cmd: vm start SantoDomingo 
+Jan 18 15:14:10.804 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 15:14:10.809 HYPERVISOR: exec_cmd: vm stop SantoDomingo 
+Jan 18 15:14:10.960 VM: VM SantoDomingo shutdown.
+Jan 18 15:14:10.960 HYPERVISOR: exec_cmd: vm extract_config SantoDomingo 
+Jan 18 15:17:52.403 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 15:17:52.403 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 15:17:52.403 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 15:17:52.404 HYPERVISOR: exec_cmd: vm set_config SantoDomingo configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+Jan 18 15:17:52.404 HYPERVISOR: exec_cmd: vm start SantoDomingo 
+Jan 18 15:20:34.479 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 15:20:34.480 HYPERVISOR: exec_cmd: vm stop SantoDomingo 
+Jan 18 15:20:34.570 VM: VM SantoDomingo shutdown.
+Jan 18 15:20:34.571 HYPERVISOR: exec_cmd: vm extract_config SantoDomingo 
+Jan 18 15:21:01.016 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 15:21:01.016 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 15:21:01.016 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 15:21:01.017 HYPERVISOR: exec_cmd: vm set_config SantoDomingo configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+Jan 18 15:21:01.017 HYPERVISOR: exec_cmd: vm start SantoDomingo 
+Jan 18 19:16:24.109 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 19:16:24.112 HYPERVISOR: exec_cmd: vm stop SantoDomingo 
+Jan 18 19:16:24.216 VM: VM SantoDomingo shutdown.
+Jan 18 19:16:24.217 HYPERVISOR: exec_cmd: vm extract_config SantoDomingo 
+Jan 18 19:16:37.036 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 19:16:37.037 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 19:16:37.038 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 19:16:37.039 HYPERVISOR: exec_cmd: vm set_config SantoDomingo configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+Jan 18 19:16:37.039 HYPERVISOR: exec_cmd: vm start SantoDomingo 
+Jan 18 19:19:41.548 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 19:19:41.550 HYPERVISOR: exec_cmd: vm stop SantoDomingo 
+Jan 18 19:19:41.648 VM: VM SantoDomingo shutdown.
+Jan 18 19:19:41.649 HYPERVISOR: exec_cmd: vm extract_config SantoDomingo 
+Jan 18 19:20:13.106 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 19:20:13.107 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 19:20:13.107 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 19:20:13.108 HYPERVISOR: exec_cmd: vm set_config SantoDomingo configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+Jan 18 19:20:13.108 HYPERVISOR: exec_cmd: vm start SantoDomingo 
+Jan 18 19:20:46.981 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 19:20:46.981 HYPERVISOR: exec_cmd: vm stop SantoDomingo 
+Jan 18 19:20:47.180 VM: VM SantoDomingo shutdown.
+Jan 18 19:20:47.181 HYPERVISOR: exec_cmd: vm extract_config SantoDomingo 
+Jan 18 19:21:32.825 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 19:21:32.825 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 19:21:32.825 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 19:21:32.826 HYPERVISOR: exec_cmd: vm set_config SantoDomingo configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+Jan 18 19:21:32.826 HYPERVISOR: exec_cmd: vm start SantoDomingo 
+Jan 18 20:21:59.094 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 20:21:59.097 HYPERVISOR: exec_cmd: vm stop SantoDomingo 
+Jan 18 20:21:59.202 VM: VM SantoDomingo shutdown.
+Jan 18 20:21:59.214 HYPERVISOR: exec_cmd: vm extract_config SantoDomingo 
+Jan 18 20:23:16.730 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 20:23:16.730 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 20:23:16.730 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 20:23:16.731 HYPERVISOR: exec_cmd: vm set_config SantoDomingo configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+Jan 18 20:23:16.731 HYPERVISOR: exec_cmd: vm start SantoDomingo 
+Jan 18 20:58:52.723 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 20:58:52.727 HYPERVISOR: exec_cmd: vm stop SantoDomingo 
+Jan 18 20:58:52.831 VM: VM SantoDomingo shutdown.
+Jan 18 20:58:52.833 HYPERVISOR: exec_cmd: vm extract_config SantoDomingo 
+Jan 18 21:41:32.557 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 21:41:32.558 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 21:41:32.558 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 21:41:32.558 HYPERVISOR: exec_cmd: vm set_config SantoDomingo configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+Jan 18 21:41:32.558 HYPERVISOR: exec_cmd: vm start SantoDomingo 
+Jan 18 21:48:21.554 HYPERVISOR: exec_cmd: nio bind_filter udp-3298ea86-8cbc-4cd7-921a-3b94b5691cd4 2 capture 
+Jan 18 21:48:21.566 HYPERVISOR: exec_cmd: nio setup_filter udp-3298ea86-8cbc-4cd7-921a-3b94b5691cd4 2 en10mb /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/captures/SantoDomingo_FastEthernet00_to_OpB_Core_FastEthernet01.pcap 
+Jan 18 22:15:02.493 HYPERVISOR: exec_cmd: vm set_ghost_status SantoDomingo 2 
+Jan 18 22:15:02.494 HYPERVISOR: exec_cmd: vm set_ghost_file SantoDomingo /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 22:15:02.495 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 22:40:35.732 HYPERVISOR: exec_cmd: vm get_status SantoDomingo 
+Jan 18 22:40:35.733 HYPERVISOR: exec_cmd: vm stop SantoDomingo 
+Jan 18 22:40:35.888 VM: VM SantoDomingo shutdown.
+Jan 18 22:40:35.893 HYPERVISOR: exec_cmd: vm extract_config SantoDomingo 
+Jan 18 22:40:35.907 HYPERVISOR: exec_cmd: vm delete SantoDomingo 
+Jan 18 22:40:35.907 VM: VM SantoDomingo destroyed.
+Jan 18 22:40:35.927 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 18 22:40:36.179 HYPERVISOR: Stopped.
+Jan 18 22:40:36.179 GENERAL: reset done.

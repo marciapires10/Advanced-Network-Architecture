@@ -1,0 +1,38 @@
+Jan 25 11:36:24.277 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 25 11:36:24.278 HYPERVISOR: Started on IP = localhost, TCP port = 56297.
+Jan 25 11:36:24.288 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 11:36:24.289 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 25 11:36:24.289 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 25 11:36:24.289 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/10b388bf-95f6-42fd-b7ff-f6de15fb454a 
+Jan 25 11:36:24.289 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/10b388bf-95f6-42fd-b7ff-f6de15fb454a
+Jan 25 11:36:24.289 HYPERVISOR: exec_cmd: vm create OpA_Core 13 c7200 
+Jan 25 11:36:24.289 VM: VM OpA_Core created.
+Jan 25 11:36:24.289 HYPERVISOR: exec_cmd: vm set_con_tcp_port OpA_Core 5036 
+Jan 25 11:36:24.289 HYPERVISOR: exec_cmd: c7200 get_mac_addr OpA_Core 
+Jan 25 11:36:24.290 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 25 11:36:24.290 HYPERVISOR: exec_cmd: vm slot_add_binding OpA_Core 0 0 C7200-IO-FE 
+Jan 25 11:36:24.290 HYPERVISOR: exec_cmd: vm set_disk0 OpA_Core 0 
+Jan 25 11:36:24.290 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 25 11:36:24.290 HYPERVISOR: exec_cmd: vm set_idle_pc OpA_Core 0x6318687c 
+Jan 25 11:36:24.291 HYPERVISOR: exec_cmd: vm set_ios OpA_Core /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 25 11:36:24.291 HYPERVISOR: exec_cmd: c7200 set_mac_addr OpA_Core ca0d.13b7.0000 
+Jan 25 11:36:24.291 HYPERVISOR: exec_cmd: vm set_nvram OpA_Core 512 
+Jan 25 11:36:24.292 HYPERVISOR: exec_cmd: vm set_ram OpA_Core 512 
+Jan 25 11:36:24.292 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 25 11:36:24.292 HYPERVISOR: exec_cmd: vm slot_remove_binding OpA_Core 0 0 
+Jan 25 11:36:24.293 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 25 11:36:24.293 HYPERVISOR: exec_cmd: vm slot_add_binding OpA_Core 0 0 C7200-IO-2FE 
+Jan 25 11:36:24.293 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 25 11:36:24.293 HYPERVISOR: exec_cmd: vm slot_add_binding OpA_Core 1 0 PA-2FE-TX 
+Jan 25 11:36:25.567 HYPERVISOR: exec_cmd: nio create_udp udp-5cf8e699-e953-4616-b9d2-f06ba037f0a6 10004 127.0.0.1 10005 
+Jan 25 11:36:25.787 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OpA_Core 0 0 udp-5cf8e699-e953-4616-b9d2-f06ba037f0a6 
+Jan 25 11:36:25.788 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 25 11:36:26.107 HYPERVISOR: exec_cmd: nio create_udp udp-6deed6cf-1e44-4759-aab3-a1a996a0490b 10010 127.0.0.1 10011 
+Jan 25 11:36:26.108 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OpA_Core 0 1 udp-6deed6cf-1e44-4759-aab3-a1a996a0490b 
+Jan 25 11:36:26.109 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 25 11:36:27.378 HYPERVISOR: exec_cmd: nio create_udp udp-eac982b5-8f0a-49f3-93a8-2a4383ddaf26 10038 127.0.0.1 10039 
+Jan 25 11:36:27.379 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OpA_Core 1 0 udp-eac982b5-8f0a-49f3-93a8-2a4383ddaf26 
+Jan 25 11:36:27.379 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 25 11:36:27.743 HYPERVISOR: exec_cmd: nio create_udp udp-798b673e-4718-4456-b5a5-6e07e638debe 10044 127.0.0.1 10045 
+Jan 25 11:36:27.744 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OpA_Core 1 1 udp-798b673e-4718-4456-b5a5-6e07e638debe 
+Jan 25 11:36:27.745 HYPERVISOR: exec_cmd: vm get_status OpA_Core 

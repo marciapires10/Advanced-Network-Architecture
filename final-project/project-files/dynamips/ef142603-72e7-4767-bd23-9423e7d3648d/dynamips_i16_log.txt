@@ -1,0 +1,18 @@
+Jan 17 12:11:26.666 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 17 12:11:26.666 HYPERVISOR: Started on IP = localhost, TCP port = 50883.
+Jan 17 12:11:26.680 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 17 12:11:26.681 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 17 12:11:26.681 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 17 12:11:26.681 HYPERVISOR: exec_cmd: ethsw create A_VoIP_Net1 
+Jan 17 12:11:33.556 HYPERVISOR: exec_cmd: nio create_udp udp-9c832fe7-ff80-4688-817b-9b0305573cda 10124 127.0.0.1 10125 
+Jan 17 12:11:33.556 HYPERVISOR: exec_cmd: ethsw add_nio A_VoIP_Net1 udp-9c832fe7-ff80-4688-817b-9b0305573cda 
+Jan 17 12:11:33.563 HYPERVISOR: exec_cmd: ethsw set_access_port A_VoIP_Net1 udp-9c832fe7-ff80-4688-817b-9b0305573cda 1 
+Jan 17 12:11:34.443 HYPERVISOR: exec_cmd: nio create_udp udp-a6ed4b31-abfc-48fb-b790-d717876e91ef 10141 127.0.0.1 10140 
+Jan 17 12:11:34.447 HYPERVISOR: exec_cmd: ethsw add_nio A_VoIP_Net1 udp-a6ed4b31-abfc-48fb-b790-d717876e91ef 
+Jan 17 12:11:34.466 HYPERVISOR: exec_cmd: ethsw set_access_port A_VoIP_Net1 udp-a6ed4b31-abfc-48fb-b790-d717876e91ef 1 
+Jan 17 21:16:40.895 HYPERVISOR: exec_cmd: nio bind_filter udp-a6ed4b31-abfc-48fb-b790-d717876e91ef 2 capture 
+Jan 17 21:16:40.896 HYPERVISOR: exec_cmd: nio setup_filter udp-a6ed4b31-abfc-48fb-b790-d717876e91ef 2 en10mb /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/captures/Arasaka_N_FastEthernet10_to_A_VoIP_Net1_Ethernet0.pcap 
+Jan 18 00:44:28.730 HYPERVISOR: exec_cmd: ethsw delete A_VoIP_Net1 
+Jan 18 00:44:28.804 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 18 00:44:29.071 HYPERVISOR: Stopped.
+Jan 18 00:44:29.075 GENERAL: reset done.

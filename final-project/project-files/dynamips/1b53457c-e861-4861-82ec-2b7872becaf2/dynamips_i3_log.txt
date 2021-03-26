@@ -1,0 +1,200 @@
+Jan 18 10:20:28.102 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 18 10:20:28.102 HYPERVISOR: Started on IP = localhost, TCP port = 40033.
+Jan 18 10:20:28.112 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 18 10:20:28.112 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 18 10:20:28.112 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 18 10:20:28.113 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/1b53457c-e861-4861-82ec-2b7872becaf2 
+Jan 18 10:20:28.113 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/1b53457c-e861-4861-82ec-2b7872becaf2
+Jan 18 10:20:28.113 HYPERVISOR: exec_cmd: vm create Westbrook 3 c7200 
+Jan 18 10:20:28.113 VM: VM Westbrook created.
+Jan 18 10:20:28.113 HYPERVISOR: exec_cmd: vm set_con_tcp_port Westbrook 5002 
+Jan 18 10:20:28.113 HYPERVISOR: exec_cmd: c7200 get_mac_addr Westbrook 
+Jan 18 10:20:28.113 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 10:20:28.113 HYPERVISOR: exec_cmd: vm slot_add_binding Westbrook 0 0 C7200-IO-FE 
+Jan 18 10:20:28.114 HYPERVISOR: exec_cmd: vm set_disk0 Westbrook 0 
+Jan 18 10:20:28.114 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 10:20:28.114 HYPERVISOR: exec_cmd: vm set_idle_pc Westbrook 0x6318687c 
+Jan 18 10:20:28.114 HYPERVISOR: exec_cmd: vm set_ios Westbrook /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 10:20:28.115 HYPERVISOR: exec_cmd: c7200 set_mac_addr Westbrook ca03.214d.0000 
+Jan 18 10:20:28.115 HYPERVISOR: exec_cmd: vm set_nvram Westbrook 512 
+Jan 18 10:20:28.115 HYPERVISOR: exec_cmd: vm set_ram Westbrook 512 
+Jan 18 10:20:28.115 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 10:20:28.115 HYPERVISOR: exec_cmd: vm slot_remove_binding Westbrook 0 0 
+Jan 18 10:20:28.116 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 10:20:28.116 HYPERVISOR: exec_cmd: vm slot_add_binding Westbrook 0 0 C7200-IO-2FE 
+Jan 18 10:20:28.116 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 10:20:28.116 HYPERVISOR: exec_cmd: vm slot_add_binding Westbrook 1 0 PA-2FE-TX 
+Jan 18 10:20:30.296 HYPERVISOR: exec_cmd: nio create_udp udp-4b29b207-8428-4b8d-98a7-9af0bbcb9482 10016 127.0.0.1 10017 
+Jan 18 10:20:30.506 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Westbrook 0 1 udp-4b29b207-8428-4b8d-98a7-9af0bbcb9482 
+Jan 18 10:20:30.507 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 10:20:30.870 HYPERVISOR: exec_cmd: nio create_udp udp-78479fc7-8c49-41f8-85f6-a64e99421272 10026 127.0.0.1 10027 
+Jan 18 10:20:30.872 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Westbrook 0 0 udp-78479fc7-8c49-41f8-85f6-a64e99421272 
+Jan 18 10:20:30.872 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 10:20:55.456 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jan 18 10:20:55.456 VM: VM Ghost created.
+Jan 18 10:20:55.466 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 10:20:55.469 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 18 10:20:55.471 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 10:20:55.473 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Jan 18 10:20:55.474 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 18 10:20:55.476 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jan 18 10:20:55.477 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 18 10:20:55.884 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 18 10:20:55.884 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jan 18 10:20:56.106 VM: VM Ghost shutdown.
+Jan 18 10:20:56.107 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jan 18 10:20:56.109 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 18 10:20:56.109 VM: VM Ghost destroyed.
+Jan 18 10:20:56.112 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 10:20:56.112 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 10:20:56.113 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 10:20:56.114 HYPERVISOR: exec_cmd: vm set_config Westbrook configs/i3_startup-config.cfg configs/i3_private-config.cfg 
+Jan 18 10:20:56.115 HYPERVISOR: exec_cmd: vm start Westbrook 
+Jan 18 10:21:26.347 HYPERVISOR: exec_cmd: vm extract_config Westbrook 
+Jan 18 10:22:26.350 HYPERVISOR: exec_cmd: vm extract_config Westbrook 
+Jan 18 10:48:15.404 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 10:48:15.412 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 10:48:15.413 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 11:05:56.220 HYPERVISOR: exec_cmd: vm set_ios Westbrook /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 11:06:23.127 HYPERVISOR: exec_cmd: vm set_ios Westbrook /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 11:09:31.210 HYPERVISOR: exec_cmd: vm set_ios Westbrook /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 11:10:31.626 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 11:10:31.629 HYPERVISOR: exec_cmd: vm stop Westbrook 
+Jan 18 11:10:31.753 VM: VM Westbrook shutdown.
+Jan 18 11:10:31.756 HYPERVISOR: exec_cmd: vm extract_config Westbrook 
+Jan 18 11:10:40.067 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 11:10:40.069 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:10:40.069 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 11:10:40.070 HYPERVISOR: exec_cmd: vm set_config Westbrook configs/i3_startup-config.cfg configs/i3_private-config.cfg 
+Jan 18 11:10:40.071 HYPERVISOR: exec_cmd: vm start Westbrook 
+Jan 18 11:14:21.425 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 11:14:21.430 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:14:21.431 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 11:30:36.979 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 11:30:36.983 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:30:36.985 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 11:42:29.932 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 11:42:29.933 HYPERVISOR: exec_cmd: vm stop Westbrook 
+Jan 18 11:42:30.024 VM: VM Westbrook shutdown.
+Jan 18 11:42:30.025 HYPERVISOR: exec_cmd: vm extract_config Westbrook 
+Jan 18 11:42:55.754 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 11:42:55.757 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:42:55.760 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 11:42:55.762 HYPERVISOR: exec_cmd: vm set_config Westbrook configs/i3_startup-config.cfg configs/i3_private-config.cfg 
+Jan 18 11:42:55.763 HYPERVISOR: exec_cmd: vm start Westbrook 
+Jan 18 11:49:54.687 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 11:49:54.690 HYPERVISOR: exec_cmd: vm stop Westbrook 
+Jan 18 11:49:54.809 VM: VM Westbrook shutdown.
+Jan 18 11:49:54.810 HYPERVISOR: exec_cmd: vm extract_config Westbrook 
+Jan 18 11:49:59.569 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 11:49:59.571 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:49:59.571 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 11:49:59.572 HYPERVISOR: exec_cmd: vm set_config Westbrook configs/i3_startup-config.cfg configs/i3_private-config.cfg 
+Jan 18 11:49:59.572 HYPERVISOR: exec_cmd: vm start Westbrook 
+Jan 18 12:00:20.437 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 12:00:20.438 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 12:00:20.438 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 12:10:16.406 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 12:10:16.410 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 12:10:16.413 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 12:21:28.140 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 12:21:28.142 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 12:21:28.142 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 12:25:06.822 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 12:25:06.823 HYPERVISOR: exec_cmd: vm stop Westbrook 
+Jan 18 12:25:06.952 VM: VM Westbrook shutdown.
+Jan 18 12:25:06.960 HYPERVISOR: exec_cmd: vm extract_config Westbrook 
+Jan 18 12:25:17.122 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 12:25:17.127 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 12:25:17.129 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 12:25:17.133 HYPERVISOR: exec_cmd: vm set_config Westbrook configs/i3_startup-config.cfg configs/i3_private-config.cfg 
+Jan 18 12:25:17.136 HYPERVISOR: exec_cmd: vm start Westbrook 
+Jan 18 14:41:34.729 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 14:41:34.750 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 14:41:34.753 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 15:12:25.871 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 15:12:25.882 HYPERVISOR: exec_cmd: vm stop Westbrook 
+Jan 18 15:12:25.980 VM: VM Westbrook shutdown.
+Jan 18 15:12:25.981 HYPERVISOR: exec_cmd: vm extract_config Westbrook 
+Jan 18 15:12:32.824 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 15:12:32.837 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 15:12:32.839 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 15:12:32.839 HYPERVISOR: exec_cmd: vm set_config Westbrook configs/i3_startup-config.cfg configs/i3_private-config.cfg 
+Jan 18 15:12:32.840 HYPERVISOR: exec_cmd: vm start Westbrook 
+Jan 18 15:14:10.663 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 15:14:10.668 HYPERVISOR: exec_cmd: vm stop Westbrook 
+Jan 18 15:14:10.801 VM: VM Westbrook shutdown.
+Jan 18 15:14:10.803 HYPERVISOR: exec_cmd: vm extract_config Westbrook 
+Jan 18 15:17:52.167 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 15:17:52.173 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 15:17:52.174 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 15:17:52.178 HYPERVISOR: exec_cmd: vm set_config Westbrook configs/i3_startup-config.cfg configs/i3_private-config.cfg 
+Jan 18 15:17:52.181 HYPERVISOR: exec_cmd: vm start Westbrook 
+Jan 18 15:20:34.361 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 15:20:34.361 HYPERVISOR: exec_cmd: vm stop Westbrook 
+Jan 18 15:20:34.462 VM: VM Westbrook shutdown.
+Jan 18 15:20:34.477 HYPERVISOR: exec_cmd: vm extract_config Westbrook 
+Jan 18 15:21:00.779 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 15:21:00.786 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 15:21:00.788 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 15:21:00.792 HYPERVISOR: exec_cmd: vm set_config Westbrook configs/i3_startup-config.cfg configs/i3_private-config.cfg 
+Jan 18 15:21:00.794 HYPERVISOR: exec_cmd: vm start Westbrook 
+Jan 18 19:16:23.975 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 19:16:23.985 HYPERVISOR: exec_cmd: vm stop Westbrook 
+Jan 18 19:16:24.096 VM: VM Westbrook shutdown.
+Jan 18 19:16:24.099 HYPERVISOR: exec_cmd: vm extract_config Westbrook 
+Jan 18 19:16:36.828 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 19:16:36.829 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 19:16:36.829 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 19:16:36.830 HYPERVISOR: exec_cmd: vm set_config Westbrook configs/i3_startup-config.cfg configs/i3_private-config.cfg 
+Jan 18 19:16:36.830 HYPERVISOR: exec_cmd: vm start Westbrook 
+Jan 18 19:19:41.428 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 19:19:41.438 HYPERVISOR: exec_cmd: vm stop Westbrook 
+Jan 18 19:19:41.532 VM: VM Westbrook shutdown.
+Jan 18 19:19:41.535 HYPERVISOR: exec_cmd: vm extract_config Westbrook 
+Jan 18 19:20:12.862 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 19:20:12.864 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 19:20:12.864 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 19:20:12.865 HYPERVISOR: exec_cmd: vm set_config Westbrook configs/i3_startup-config.cfg configs/i3_private-config.cfg 
+Jan 18 19:20:12.866 HYPERVISOR: exec_cmd: vm start Westbrook 
+Jan 18 19:20:46.727 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 19:20:46.732 HYPERVISOR: exec_cmd: vm stop Westbrook 
+Jan 18 19:20:47.076 VM: VM Westbrook shutdown.
+Jan 18 19:20:47.097 HYPERVISOR: exec_cmd: vm extract_config Westbrook 
+Jan 18 19:21:32.605 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 19:21:32.608 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 19:21:32.611 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 19:21:32.613 HYPERVISOR: exec_cmd: vm set_config Westbrook configs/i3_startup-config.cfg configs/i3_private-config.cfg 
+Jan 18 19:21:32.614 HYPERVISOR: exec_cmd: vm start Westbrook 
+Jan 18 20:21:58.938 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 20:21:58.948 HYPERVISOR: exec_cmd: vm stop Westbrook 
+Jan 18 20:21:59.065 VM: VM Westbrook shutdown.
+Jan 18 20:21:59.070 HYPERVISOR: exec_cmd: vm extract_config Westbrook 
+Jan 18 20:23:16.520 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 20:23:16.521 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 20:23:16.521 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 20:23:16.522 HYPERVISOR: exec_cmd: vm set_config Westbrook configs/i3_startup-config.cfg configs/i3_private-config.cfg 
+Jan 18 20:23:16.522 HYPERVISOR: exec_cmd: vm start Westbrook 
+Jan 18 20:58:52.547 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 20:58:52.562 HYPERVISOR: exec_cmd: vm stop Westbrook 
+Jan 18 20:58:52.698 VM: VM Westbrook shutdown.
+Jan 18 20:58:52.700 HYPERVISOR: exec_cmd: vm extract_config Westbrook 
+Jan 18 21:41:32.285 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 21:41:32.299 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 21:41:32.302 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 21:41:32.306 HYPERVISOR: exec_cmd: vm set_config Westbrook configs/i3_startup-config.cfg configs/i3_private-config.cfg 
+Jan 18 21:41:32.309 HYPERVISOR: exec_cmd: vm start Westbrook 
+Jan 18 21:47:18.856 HYPERVISOR: exec_cmd: nio bind_filter udp-78479fc7-8c49-41f8-85f6-a64e99421272 2 capture 
+Jan 18 21:47:18.856 HYPERVISOR: exec_cmd: nio setup_filter udp-78479fc7-8c49-41f8-85f6-a64e99421272 2 en10mb /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/captures/Westbrook_FastEthernet00_to_OpB_Core_FastEthernet00.pcap 
+Jan 18 22:15:02.476 HYPERVISOR: exec_cmd: vm set_ghost_status Westbrook 2 
+Jan 18 22:15:02.479 HYPERVISOR: exec_cmd: vm set_ghost_file Westbrook /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 22:15:02.483 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 22:40:35.780 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 18 22:40:35.780 HYPERVISOR: exec_cmd: vm stop Westbrook 
+Jan 18 22:40:35.914 VM: VM Westbrook shutdown.
+Jan 18 22:40:35.927 HYPERVISOR: exec_cmd: vm extract_config Westbrook 
+Jan 18 22:40:35.932 HYPERVISOR: exec_cmd: vm delete Westbrook 
+Jan 18 22:40:35.933 VM: VM Westbrook destroyed.
+Jan 18 22:40:35.935 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 18 22:40:36.380 HYPERVISOR: Stopped.
+Jan 18 22:40:36.381 GENERAL: reset done.

@@ -1,0 +1,32 @@
+Jan 25 11:36:23.724 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 25 11:36:23.724 HYPERVISOR: Started on IP = localhost, TCP port = 54551.
+Jan 25 11:36:23.735 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 11:36:23.735 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 25 11:36:23.735 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 25 11:36:23.735 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/456ea34c-bd76-44c5-8f61-2138d9872ebc 
+Jan 25 11:36:23.735 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/456ea34c-bd76-44c5-8f61-2138d9872ebc
+Jan 25 11:36:23.735 HYPERVISOR: exec_cmd: vm create A_North 7 c7200 
+Jan 25 11:36:23.735 VM: VM A_North created.
+Jan 25 11:36:23.736 HYPERVISOR: exec_cmd: vm set_con_tcp_port A_North 5006 
+Jan 25 11:36:23.736 HYPERVISOR: exec_cmd: c7200 get_mac_addr A_North 
+Jan 25 11:36:23.736 HYPERVISOR: exec_cmd: vm get_status A_North 
+Jan 25 11:36:23.736 HYPERVISOR: exec_cmd: vm slot_add_binding A_North 0 0 C7200-IO-FE 
+Jan 25 11:36:23.737 HYPERVISOR: exec_cmd: vm set_disk0 A_North 0 
+Jan 25 11:36:23.737 HYPERVISOR: exec_cmd: vm get_status A_North 
+Jan 25 11:36:23.737 HYPERVISOR: exec_cmd: vm set_idle_pc A_North 0x6318687c 
+Jan 25 11:36:23.738 HYPERVISOR: exec_cmd: vm set_ios A_North /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 25 11:36:23.738 HYPERVISOR: exec_cmd: c7200 set_mac_addr A_North ca07.26c6.0000 
+Jan 25 11:36:23.738 HYPERVISOR: exec_cmd: vm set_nvram A_North 512 
+Jan 25 11:36:23.739 HYPERVISOR: exec_cmd: vm set_ram A_North 512 
+Jan 25 11:36:23.739 HYPERVISOR: exec_cmd: vm get_status A_North 
+Jan 25 11:36:23.739 HYPERVISOR: exec_cmd: vm slot_remove_binding A_North 0 0 
+Jan 25 11:36:23.740 HYPERVISOR: exec_cmd: vm get_status A_North 
+Jan 25 11:36:23.740 HYPERVISOR: exec_cmd: vm slot_add_binding A_North 0 0 C7200-IO-2FE 
+Jan 25 11:36:23.740 HYPERVISOR: exec_cmd: vm get_status A_North 
+Jan 25 11:36:23.740 HYPERVISOR: exec_cmd: vm slot_add_binding A_North 1 0 PA-2FE-TX 
+Jan 25 11:36:27.387 HYPERVISOR: exec_cmd: nio create_udp udp-e678e45b-d628-48e4-af2e-280bd09a959b 10040 127.0.0.1 10041 
+Jan 25 11:36:27.603 HYPERVISOR: exec_cmd: vm slot_add_nio_binding A_North 0 0 udp-e678e45b-d628-48e4-af2e-280bd09a959b 
+Jan 25 11:36:27.604 HYPERVISOR: exec_cmd: vm get_status A_North 
+Jan 25 11:36:28.753 HYPERVISOR: exec_cmd: nio create_udp udp-5eb29bbb-40a4-4ab7-8953-ab43ec600497 10062 127.0.0.1 10063 
+Jan 25 11:36:28.754 HYPERVISOR: exec_cmd: vm slot_add_nio_binding A_North 0 1 udp-5eb29bbb-40a4-4ab7-8953-ab43ec600497 
+Jan 25 11:36:28.754 HYPERVISOR: exec_cmd: vm get_status A_North 

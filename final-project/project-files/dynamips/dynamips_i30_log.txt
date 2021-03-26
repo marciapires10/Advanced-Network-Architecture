@@ -1,0 +1,20 @@
+Jan 25 11:36:25.199 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 25 11:36:25.199 HYPERVISOR: Started on IP = localhost, TCP port = 34791.
+Jan 25 11:36:25.210 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 11:36:25.210 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 25 11:36:25.210 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 25 11:36:25.210 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/ebb9f667-4069-4051-b796-b1d3df6331a7 
+Jan 25 11:36:25.211 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/ebb9f667-4069-4051-b796-b1d3df6331a7
+Jan 25 11:36:25.211 HYPERVISOR: exec_cmd: vm create R3 19 c3725 
+Jan 25 11:36:25.211 VM: VM R3 created.
+Jan 25 11:36:25.211 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5045 
+Jan 25 11:36:25.213 HYPERVISOR: exec_cmd: c3725 get_mac_addr R3 
+Jan 25 11:36:25.213 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Jan 25 11:36:25.214 HYPERVISOR: exec_cmd: vm get_status R3 
+Jan 25 11:36:25.214 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60a6a1e0 
+Jan 25 11:36:25.214 HYPERVISOR: exec_cmd: vm set_ios R3 /home/marciapires/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 25 11:36:25.215 HYPERVISOR: exec_cmd: c3725 set_mac_addr R3 c213.9c20.0000 
+Jan 25 11:36:25.215 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Jan 25 11:36:36.078 HYPERVISOR: exec_cmd: nio create_udp udp-a4a18fb9-c870-4d81-8e80-27de1d9daaae 10160 127.0.0.1 10161 
+Jan 25 11:36:36.294 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-a4a18fb9-c870-4d81-8e80-27de1d9daaae 
+Jan 25 11:36:36.295 HYPERVISOR: exec_cmd: vm get_status R3 

@@ -1,0 +1,29 @@
+Jan 25 11:36:24.382 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 25 11:36:24.382 HYPERVISOR: Started on IP = localhost, TCP port = 46863.
+Jan 25 11:36:24.393 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 11:36:24.393 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 25 11:36:24.393 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 25 11:36:24.393 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c98e7f02-b1b8-4a54-8c74-f51f8bc877b5 
+Jan 25 11:36:24.393 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c98e7f02-b1b8-4a54-8c74-f51f8bc877b5
+Jan 25 11:36:24.394 HYPERVISOR: exec_cmd: vm create InternetCore 15 c7200 
+Jan 25 11:36:24.394 VM: VM InternetCore created.
+Jan 25 11:36:24.394 HYPERVISOR: exec_cmd: vm set_con_tcp_port InternetCore 5042 
+Jan 25 11:36:24.394 HYPERVISOR: exec_cmd: c7200 get_mac_addr InternetCore 
+Jan 25 11:36:24.394 HYPERVISOR: exec_cmd: vm get_status InternetCore 
+Jan 25 11:36:24.395 HYPERVISOR: exec_cmd: vm slot_add_binding InternetCore 0 0 C7200-IO-FE 
+Jan 25 11:36:24.395 HYPERVISOR: exec_cmd: vm set_disk0 InternetCore 0 
+Jan 25 11:36:24.395 HYPERVISOR: exec_cmd: vm get_status InternetCore 
+Jan 25 11:36:24.395 HYPERVISOR: exec_cmd: vm set_idle_pc InternetCore 0x6318687c 
+Jan 25 11:36:24.396 HYPERVISOR: exec_cmd: vm set_ios InternetCore /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 25 11:36:24.396 HYPERVISOR: exec_cmd: c7200 set_mac_addr InternetCore ca0f.62a3.0000 
+Jan 25 11:36:24.397 HYPERVISOR: exec_cmd: vm set_nvram InternetCore 512 
+Jan 25 11:36:24.397 HYPERVISOR: exec_cmd: vm set_ram InternetCore 512 
+Jan 25 11:36:24.397 HYPERVISOR: exec_cmd: vm get_status InternetCore 
+Jan 25 11:36:24.397 HYPERVISOR: exec_cmd: vm slot_remove_binding InternetCore 0 0 
+Jan 25 11:36:24.397 HYPERVISOR: exec_cmd: vm get_status InternetCore 
+Jan 25 11:36:24.398 HYPERVISOR: exec_cmd: vm slot_add_binding InternetCore 0 0 C7200-IO-2FE 
+Jan 25 11:36:24.398 HYPERVISOR: exec_cmd: vm get_status InternetCore 
+Jan 25 11:36:24.398 HYPERVISOR: exec_cmd: vm slot_add_binding InternetCore 1 0 PA-2FE-TX 
+Jan 25 11:36:36.737 HYPERVISOR: exec_cmd: nio create_udp udp-25e973c0-48b5-4dc8-a215-b869bfdd5f72 10170 127.0.0.1 10171 
+Jan 25 11:36:36.955 HYPERVISOR: exec_cmd: vm slot_add_nio_binding InternetCore 0 0 udp-25e973c0-48b5-4dc8-a215-b869bfdd5f72 
+Jan 25 11:36:36.957 HYPERVISOR: exec_cmd: vm get_status InternetCore 

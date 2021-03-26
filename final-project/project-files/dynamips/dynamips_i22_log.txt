@@ -1,0 +1,38 @@
+Jan 25 11:36:24.313 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 25 11:36:24.313 HYPERVISOR: Started on IP = localhost, TCP port = 57099.
+Jan 25 11:36:24.323 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 11:36:24.323 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 25 11:36:24.323 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 25 11:36:24.324 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/be039290-d687-495f-9ab1-fec861b687e9 
+Jan 25 11:36:24.324 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/be039290-d687-495f-9ab1-fec861b687e9
+Jan 25 11:36:24.324 HYPERVISOR: exec_cmd: vm create OpB_Core 14 c7200 
+Jan 25 11:36:24.324 VM: VM OpB_Core created.
+Jan 25 11:36:24.324 HYPERVISOR: exec_cmd: vm set_con_tcp_port OpB_Core 5037 
+Jan 25 11:36:24.324 HYPERVISOR: exec_cmd: c7200 get_mac_addr OpB_Core 
+Jan 25 11:36:24.325 HYPERVISOR: exec_cmd: vm get_status OpB_Core 
+Jan 25 11:36:24.325 HYPERVISOR: exec_cmd: vm slot_add_binding OpB_Core 0 0 C7200-IO-FE 
+Jan 25 11:36:24.325 HYPERVISOR: exec_cmd: vm set_disk0 OpB_Core 0 
+Jan 25 11:36:24.325 HYPERVISOR: exec_cmd: vm get_status OpB_Core 
+Jan 25 11:36:24.326 HYPERVISOR: exec_cmd: vm set_idle_pc OpB_Core 0x6318687c 
+Jan 25 11:36:24.326 HYPERVISOR: exec_cmd: vm set_ios OpB_Core /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 25 11:36:24.327 HYPERVISOR: exec_cmd: c7200 set_mac_addr OpB_Core ca0e.13e9.0000 
+Jan 25 11:36:24.327 HYPERVISOR: exec_cmd: vm set_nvram OpB_Core 512 
+Jan 25 11:36:24.327 HYPERVISOR: exec_cmd: vm set_ram OpB_Core 512 
+Jan 25 11:36:24.327 HYPERVISOR: exec_cmd: vm get_status OpB_Core 
+Jan 25 11:36:24.328 HYPERVISOR: exec_cmd: vm slot_remove_binding OpB_Core 0 0 
+Jan 25 11:36:24.328 HYPERVISOR: exec_cmd: vm get_status OpB_Core 
+Jan 25 11:36:24.328 HYPERVISOR: exec_cmd: vm slot_add_binding OpB_Core 0 0 C7200-IO-2FE 
+Jan 25 11:36:24.328 HYPERVISOR: exec_cmd: vm get_status OpB_Core 
+Jan 25 11:36:24.328 HYPERVISOR: exec_cmd: vm slot_add_binding OpB_Core 1 0 PA-2FE-TX 
+Jan 25 11:36:26.881 HYPERVISOR: exec_cmd: nio create_udp udp-1c0a5ee5-1ec8-4f3c-84d3-82252a9454b3 10028 127.0.0.1 10029 
+Jan 25 11:36:27.096 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OpB_Core 0 0 udp-1c0a5ee5-1ec8-4f3c-84d3-82252a9454b3 
+Jan 25 11:36:27.096 HYPERVISOR: exec_cmd: vm get_status OpB_Core 
+Jan 25 11:36:27.212 HYPERVISOR: exec_cmd: nio create_udp udp-b09b92f2-5f3c-4381-9dd2-7bcee141629c 10034 127.0.0.1 10035 
+Jan 25 11:36:27.214 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OpB_Core 0 1 udp-b09b92f2-5f3c-4381-9dd2-7bcee141629c 
+Jan 25 11:36:27.214 HYPERVISOR: exec_cmd: vm get_status OpB_Core 
+Jan 25 11:36:28.073 HYPERVISOR: exec_cmd: nio create_udp udp-cd36067d-d0e0-48a1-b5d6-c9c351e8a7c1 10050 127.0.0.1 10051 
+Jan 25 11:36:28.075 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OpB_Core 1 0 udp-cd36067d-d0e0-48a1-b5d6-c9c351e8a7c1 
+Jan 25 11:36:28.075 HYPERVISOR: exec_cmd: vm get_status OpB_Core 
+Jan 25 11:36:28.422 HYPERVISOR: exec_cmd: nio create_udp udp-299cbff6-3119-452d-964f-03b33fbd2e9c 10056 127.0.0.1 10057 
+Jan 25 11:36:28.424 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OpB_Core 1 1 udp-299cbff6-3119-452d-964f-03b33fbd2e9c 
+Jan 25 11:36:28.424 HYPERVISOR: exec_cmd: vm get_status OpB_Core 

@@ -1,0 +1,16 @@
+Jan 12 09:23:18.142 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 12 09:23:18.142 HYPERVISOR: Started on IP = localhost, TCP port = 43769.
+Jan 12 09:23:18.160 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 12 09:23:18.160 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 12 09:23:18.160 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 12 09:23:18.161 HYPERVISOR: exec_cmd: ethsw create M_Ext_Net 
+Jan 12 09:45:42.937 HYPERVISOR: exec_cmd: nio create_udp udp-6dc61aaf-d2a1-4e87-809c-923599b630a0 10067 127.0.0.1 10066 
+Jan 12 09:45:42.937 HYPERVISOR: exec_cmd: ethsw add_nio M_Ext_Net udp-6dc61aaf-d2a1-4e87-809c-923599b630a0 
+Jan 12 09:45:42.944 HYPERVISOR: exec_cmd: ethsw set_access_port M_Ext_Net udp-6dc61aaf-d2a1-4e87-809c-923599b630a0 1 
+Jan 12 09:45:45.468 HYPERVISOR: exec_cmd: nio create_udp udp-cc9c961a-5762-4b21-91f9-f22108d039d8 10070 127.0.0.1 10071 
+Jan 12 09:45:45.468 HYPERVISOR: exec_cmd: ethsw add_nio M_Ext_Net udp-cc9c961a-5762-4b21-91f9-f22108d039d8 
+Jan 12 09:45:45.484 HYPERVISOR: exec_cmd: ethsw set_access_port M_Ext_Net udp-cc9c961a-5762-4b21-91f9-f22108d039d8 1 
+Jan 12 10:58:19.254 HYPERVISOR: exec_cmd: ethsw delete M_Ext_Net 
+Jan 12 10:58:19.292 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 12 10:58:19.682 HYPERVISOR: Stopped.
+Jan 12 10:58:19.682 GENERAL: reset done.

@@ -1,0 +1,15 @@
+Jan 25 11:36:24.450 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 25 11:36:24.450 HYPERVISOR: Started on IP = localhost, TCP port = 33705.
+Jan 25 11:36:24.460 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 11:36:24.460 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 25 11:36:24.460 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 25 11:36:24.461 HYPERVISOR: exec_cmd: ethsw create DC_South 
+Jan 25 11:36:33.002 HYPERVISOR: exec_cmd: nio create_udp udp-c4cdfd33-1bbc-43c5-bc92-243f9c89220b 10141 127.0.0.1 10140 
+Jan 25 11:36:33.002 HYPERVISOR: exec_cmd: ethsw add_nio DC_South udp-c4cdfd33-1bbc-43c5-bc92-243f9c89220b 
+Jan 25 11:36:33.016 HYPERVISOR: exec_cmd: ethsw set_access_port DC_South udp-c4cdfd33-1bbc-43c5-bc92-243f9c89220b 1 
+Jan 25 11:36:33.128 HYPERVISOR: exec_cmd: nio create_udp udp-f20ce7b6-83b8-4f43-a149-fea979ba67cc 10144 127.0.0.1 10145 
+Jan 25 11:36:33.129 HYPERVISOR: exec_cmd: ethsw add_nio DC_South udp-f20ce7b6-83b8-4f43-a149-fea979ba67cc 
+Jan 25 11:36:33.136 HYPERVISOR: exec_cmd: ethsw set_access_port DC_South udp-f20ce7b6-83b8-4f43-a149-fea979ba67cc 1 
+Jan 25 11:36:33.507 HYPERVISOR: exec_cmd: nio create_udp udp-230fa303-7dff-4bf2-8602-9cddeec29fa9 10148 127.0.0.1 10149 
+Jan 25 11:36:33.508 HYPERVISOR: exec_cmd: ethsw add_nio DC_South udp-230fa303-7dff-4bf2-8602-9cddeec29fa9 
+Jan 25 11:36:33.526 HYPERVISOR: exec_cmd: ethsw set_access_port DC_South udp-230fa303-7dff-4bf2-8602-9cddeec29fa9 1 

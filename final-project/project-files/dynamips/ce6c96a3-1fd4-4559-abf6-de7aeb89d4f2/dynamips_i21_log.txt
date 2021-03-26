@@ -1,0 +1,49 @@
+Jan 19 02:52:05.121 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 19 02:52:05.121 HYPERVISOR: Started on IP = localhost, TCP port = 49739.
+Jan 19 02:52:05.132 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 19 02:52:05.133 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 19 02:52:05.133 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 19 02:52:05.133 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/10b388bf-95f6-42fd-b7ff-f6de15fb454a 
+Jan 19 02:52:05.133 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/10b388bf-95f6-42fd-b7ff-f6de15fb454a
+Jan 19 02:52:05.133 HYPERVISOR: exec_cmd: vm create OpA_Core 13 c7200 
+Jan 19 02:52:05.133 VM: VM OpA_Core created.
+Jan 19 02:52:05.133 HYPERVISOR: exec_cmd: vm set_con_tcp_port OpA_Core 5036 
+Jan 19 02:52:05.133 HYPERVISOR: exec_cmd: c7200 get_mac_addr OpA_Core 
+Jan 19 02:52:05.133 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 19 02:52:05.133 HYPERVISOR: exec_cmd: vm slot_add_binding OpA_Core 0 0 C7200-IO-FE 
+Jan 19 02:52:05.134 HYPERVISOR: exec_cmd: vm set_disk0 OpA_Core 0 
+Jan 19 02:52:05.134 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 19 02:52:05.134 HYPERVISOR: exec_cmd: vm set_idle_pc OpA_Core 0x6318687c 
+Jan 19 02:52:05.134 HYPERVISOR: exec_cmd: vm set_ios OpA_Core /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 19 02:52:05.135 HYPERVISOR: exec_cmd: c7200 set_mac_addr OpA_Core ca0d.13b7.0000 
+Jan 19 02:52:05.135 HYPERVISOR: exec_cmd: vm set_nvram OpA_Core 512 
+Jan 19 02:52:05.135 HYPERVISOR: exec_cmd: vm set_ram OpA_Core 512 
+Jan 19 02:52:05.135 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 19 02:52:05.135 HYPERVISOR: exec_cmd: vm slot_remove_binding OpA_Core 0 0 
+Jan 19 02:52:05.136 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 19 02:52:05.136 HYPERVISOR: exec_cmd: vm slot_add_binding OpA_Core 0 0 C7200-IO-2FE 
+Jan 19 02:52:05.136 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 19 02:52:05.136 HYPERVISOR: exec_cmd: vm slot_add_binding OpA_Core 1 0 PA-2FE-TX 
+Jan 19 02:52:06.732 HYPERVISOR: exec_cmd: nio create_udp udp-f2ab91a1-7b32-41f2-97d4-318ff5f5ac39 10004 127.0.0.1 10005 
+Jan 19 02:52:06.951 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OpA_Core 0 0 udp-f2ab91a1-7b32-41f2-97d4-318ff5f5ac39 
+Jan 19 02:52:06.953 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 19 02:52:07.307 HYPERVISOR: exec_cmd: nio create_udp udp-5cd81f6d-99ba-447c-a9ee-25d1d28f4195 10010 127.0.0.1 10011 
+Jan 19 02:52:07.308 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OpA_Core 0 1 udp-5cd81f6d-99ba-447c-a9ee-25d1d28f4195 
+Jan 19 02:52:07.309 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 19 02:52:08.495 HYPERVISOR: exec_cmd: nio create_udp udp-26a87294-028b-4b20-adb8-adc7da32f52e 10038 127.0.0.1 10039 
+Jan 19 02:52:08.495 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OpA_Core 1 0 udp-26a87294-028b-4b20-adb8-adc7da32f52e 
+Jan 19 02:52:08.496 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 19 02:52:08.804 HYPERVISOR: exec_cmd: nio create_udp udp-0cbc8448-03b9-46c1-bfc5-8a87c6a7fe84 10044 127.0.0.1 10045 
+Jan 19 02:52:08.805 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OpA_Core 1 1 udp-0cbc8448-03b9-46c1-bfc5-8a87c6a7fe84 
+Jan 19 02:52:08.805 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 19 02:54:55.775 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 19 02:54:55.777 HYPERVISOR: exec_cmd: vm extract_config OpA_Core 
+Jan 19 02:55:10.439 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 19 02:55:10.440 HYPERVISOR: exec_cmd: vm extract_config OpA_Core 
+Jan 19 02:55:11.519 HYPERVISOR: exec_cmd: vm get_status OpA_Core 
+Jan 19 02:55:11.519 HYPERVISOR: exec_cmd: vm extract_config OpA_Core 
+Jan 19 02:55:11.520 HYPERVISOR: exec_cmd: vm delete OpA_Core 
+Jan 19 02:55:11.520 VM: VM OpA_Core destroyed.
+Jan 19 02:55:11.520 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 19 02:55:11.819 HYPERVISOR: Stopped.
+Jan 19 02:55:11.819 GENERAL: reset done.

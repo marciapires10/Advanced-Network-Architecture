@@ -1,0 +1,32 @@
+Jan 25 11:36:23.757 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 25 11:36:23.757 HYPERVISOR: Started on IP = localhost, TCP port = 50621.
+Jan 25 11:36:23.768 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 11:36:23.768 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 25 11:36:23.768 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 25 11:36:23.768 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/77c7ea47-133e-43e9-81f6-c573b8269dba 
+Jan 25 11:36:23.768 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/77c7ea47-133e-43e9-81f6-c573b8269dba
+Jan 25 11:36:23.769 HYPERVISOR: exec_cmd: vm create Militech_N 8 c7200 
+Jan 25 11:36:23.769 VM: VM Militech_N created.
+Jan 25 11:36:23.769 HYPERVISOR: exec_cmd: vm set_con_tcp_port Militech_N 5007 
+Jan 25 11:36:23.769 HYPERVISOR: exec_cmd: c7200 get_mac_addr Militech_N 
+Jan 25 11:36:23.769 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 25 11:36:23.769 HYPERVISOR: exec_cmd: vm slot_add_binding Militech_N 0 0 C7200-IO-FE 
+Jan 25 11:36:23.770 HYPERVISOR: exec_cmd: vm set_disk0 Militech_N 0 
+Jan 25 11:36:23.770 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 25 11:36:23.770 HYPERVISOR: exec_cmd: vm set_idle_pc Militech_N 0x6318687c 
+Jan 25 11:36:23.770 HYPERVISOR: exec_cmd: vm set_ios Militech_N /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 25 11:36:23.771 HYPERVISOR: exec_cmd: c7200 set_mac_addr Militech_N ca08.26e0.0000 
+Jan 25 11:36:23.771 HYPERVISOR: exec_cmd: vm set_nvram Militech_N 512 
+Jan 25 11:36:23.771 HYPERVISOR: exec_cmd: vm set_ram Militech_N 512 
+Jan 25 11:36:23.771 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 25 11:36:23.771 HYPERVISOR: exec_cmd: vm slot_remove_binding Militech_N 0 0 
+Jan 25 11:36:23.771 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 25 11:36:23.772 HYPERVISOR: exec_cmd: vm slot_add_binding Militech_N 0 0 C7200-IO-2FE 
+Jan 25 11:36:23.772 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 25 11:36:23.772 HYPERVISOR: exec_cmd: vm slot_add_binding Militech_N 1 0 PA-2FE-TX 
+Jan 25 11:36:28.762 HYPERVISOR: exec_cmd: nio create_udp udp-5815270d-73b3-486a-8cb7-8c1172e76a87 10064 127.0.0.1 10065 
+Jan 25 11:36:28.982 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Militech_N 0 0 udp-5815270d-73b3-486a-8cb7-8c1172e76a87 
+Jan 25 11:36:28.984 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 25 11:36:29.146 HYPERVISOR: exec_cmd: nio create_udp udp-db6e2dc1-5fc3-43fd-937c-4d75a241be80 10068 127.0.0.1 10069 
+Jan 25 11:36:29.147 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Militech_N 0 1 udp-db6e2dc1-5fc3-43fd-937c-4d75a241be80 
+Jan 25 11:36:29.147 HYPERVISOR: exec_cmd: vm get_status Militech_N 

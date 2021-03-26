@@ -1,0 +1,60 @@
+Jan 12 09:23:18.184 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 12 09:23:18.184 HYPERVISOR: Started on IP = localhost, TCP port = 38495.
+Jan 12 09:23:18.195 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 12 09:23:18.195 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 12 09:23:18.195 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 12 09:23:18.195 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/67952359-848a-4b00-bb60-41cc721187cc 
+Jan 12 09:23:18.195 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/67952359-848a-4b00-bb60-41cc721187cc
+Jan 12 09:23:18.195 HYPERVISOR: exec_cmd: vm create B_North 5 c7200 
+Jan 12 09:23:18.195 VM: VM B_North created.
+Jan 12 09:23:18.196 HYPERVISOR: exec_cmd: vm set_con_tcp_port B_North 5013 
+Jan 12 09:23:18.196 HYPERVISOR: exec_cmd: c7200 get_mac_addr B_North 
+Jan 12 09:23:18.196 HYPERVISOR: exec_cmd: vm get_status B_North 
+Jan 12 09:23:18.196 HYPERVISOR: exec_cmd: vm slot_add_binding B_North 0 0 C7200-IO-FE 
+Jan 12 09:23:18.196 HYPERVISOR: exec_cmd: vm set_disk0 B_North 0 
+Jan 12 09:23:18.197 HYPERVISOR: exec_cmd: vm get_status B_North 
+Jan 12 09:23:18.197 HYPERVISOR: exec_cmd: vm set_idle_pc B_North 0x62cc90e4 
+Jan 12 09:23:18.197 HYPERVISOR: exec_cmd: vm set_ios B_North /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 12 09:23:18.198 HYPERVISOR: exec_cmd: c7200 set_mac_addr B_North ca05.1dea.0000 
+Jan 12 09:23:18.198 HYPERVISOR: exec_cmd: vm set_nvram B_North 512 
+Jan 12 09:23:18.199 HYPERVISOR: exec_cmd: vm set_ram B_North 512 
+Jan 12 09:23:18.199 HYPERVISOR: exec_cmd: vm get_status B_North 
+Jan 12 09:23:18.199 HYPERVISOR: exec_cmd: vm slot_remove_binding B_North 0 0 
+Jan 12 09:23:18.200 HYPERVISOR: exec_cmd: vm get_status B_North 
+Jan 12 09:23:18.200 HYPERVISOR: exec_cmd: vm slot_add_binding B_North 0 0 C7200-IO-2FE 
+Jan 12 09:23:18.200 HYPERVISOR: exec_cmd: vm get_status B_North 
+Jan 12 09:23:18.200 HYPERVISOR: exec_cmd: vm slot_add_binding B_North 1 0 PA-2FE-TX 
+Jan 12 09:37:25.286 HYPERVISOR: exec_cmd: nio create_udp udp-b3aee0ea-89fb-43bc-a6bb-eb469dc5cf59 10052 127.0.0.1 10053 
+Jan 12 09:37:25.496 HYPERVISOR: exec_cmd: vm slot_add_nio_binding B_North 0 0 udp-b3aee0ea-89fb-43bc-a6bb-eb469dc5cf59 
+Jan 12 09:37:25.496 HYPERVISOR: exec_cmd: vm get_status B_North 
+Jan 12 09:37:40.961 HYPERVISOR: exec_cmd: vm set_ios B_North /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 12 09:37:49.566 HYPERVISOR: exec_cmd: vm set_ios B_North /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 12 09:37:58.990 HYPERVISOR: exec_cmd: vm set_ios B_North /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 12 09:48:00.461 HYPERVISOR: exec_cmd: nio create_udp udp-31d55f5f-2c66-4af0-89b0-fd0b0a71cfff 10110 127.0.0.1 10111 
+Jan 12 09:48:00.462 HYPERVISOR: exec_cmd: vm slot_add_nio_binding B_North 0 1 udp-31d55f5f-2c66-4af0-89b0-fd0b0a71cfff 
+Jan 12 09:48:00.462 HYPERVISOR: exec_cmd: vm get_status B_North 
+Jan 12 09:48:11.568 HYPERVISOR: exec_cmd: nio create_udp udp-2b895bcf-7b6d-4dd5-8663-e271c24ad4db 10116 127.0.0.1 10117 
+Jan 12 09:48:11.569 HYPERVISOR: exec_cmd: vm slot_add_nio_binding B_North 1 0 udp-2b895bcf-7b6d-4dd5-8663-e271c24ad4db 
+Jan 12 09:48:11.569 HYPERVISOR: exec_cmd: vm get_status B_North 
+Jan 12 09:52:13.511 HYPERVISOR: exec_cmd: vm set_ios B_North /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 12 09:52:15.982 HYPERVISOR: exec_cmd: vm set_ios B_North /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 12 10:03:04.572 HYPERVISOR: exec_cmd: vm set_ghost_status B_North 2 
+Jan 12 10:03:04.584 HYPERVISOR: exec_cmd: vm set_ghost_file B_North /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 12 10:03:04.588 HYPERVISOR: exec_cmd: vm get_status B_North 
+Jan 12 10:03:04.588 HYPERVISOR: exec_cmd: vm set_config B_North configs/i5_startup-config.cfg 
+Jan 12 10:03:04.591 HYPERVISOR: exec_cmd: vm start B_North 
+Jan 12 10:03:34.847 HYPERVISOR: exec_cmd: vm extract_config B_North 
+Jan 12 10:04:04.849 HYPERVISOR: exec_cmd: vm extract_config B_North 
+Jan 12 10:58:11.845 HYPERVISOR: exec_cmd: vm get_status B_North 
+Jan 12 10:58:11.845 HYPERVISOR: exec_cmd: vm stop B_North 
+Jan 12 10:58:11.987 VM: VM B_North shutdown.
+Jan 12 10:58:11.993 HYPERVISOR: exec_cmd: vm extract_config B_North 
+Jan 12 10:58:19.163 HYPERVISOR: exec_cmd: vm get_status B_North 
+Jan 12 10:58:19.165 HYPERVISOR: exec_cmd: vm extract_config B_North 
+Jan 12 10:58:19.406 HYPERVISOR: exec_cmd: vm get_status B_North 
+Jan 12 10:58:19.406 HYPERVISOR: exec_cmd: vm extract_config B_North 
+Jan 12 10:58:19.407 HYPERVISOR: exec_cmd: vm delete B_North 
+Jan 12 10:58:19.407 VM: VM B_North destroyed.
+Jan 12 10:58:19.407 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 12 10:58:19.712 HYPERVISOR: Stopped.
+Jan 12 10:58:19.712 GENERAL: reset done.

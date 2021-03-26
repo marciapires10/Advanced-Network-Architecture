@@ -1,0 +1,12 @@
+Jan 25 11:36:24.181 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 25 11:36:24.181 HYPERVISOR: Started on IP = localhost, TCP port = 36351.
+Jan 25 11:36:24.192 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 11:36:24.192 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 25 11:36:24.192 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 25 11:36:24.192 HYPERVISOR: exec_cmd: ethsw create A_VoIP_Net2 
+Jan 25 11:36:30.519 HYPERVISOR: exec_cmd: nio create_udp udp-a7732cea-664e-4740-adbe-77406a5d57e3 10095 127.0.0.1 10094 
+Jan 25 11:36:30.520 HYPERVISOR: exec_cmd: ethsw add_nio A_VoIP_Net2 udp-a7732cea-664e-4740-adbe-77406a5d57e3 
+Jan 25 11:36:30.535 HYPERVISOR: exec_cmd: ethsw set_access_port A_VoIP_Net2 udp-a7732cea-664e-4740-adbe-77406a5d57e3 1 
+Jan 25 11:36:30.770 HYPERVISOR: exec_cmd: nio create_udp udp-eb5175a6-f1a2-4402-bd4f-0fac5e51817b 10100 127.0.0.1 10101 
+Jan 25 11:36:30.771 HYPERVISOR: exec_cmd: ethsw add_nio A_VoIP_Net2 udp-eb5175a6-f1a2-4402-bd4f-0fac5e51817b 
+Jan 25 11:36:30.776 HYPERVISOR: exec_cmd: ethsw set_access_port A_VoIP_Net2 udp-eb5175a6-f1a2-4402-bd4f-0fac5e51817b 1 

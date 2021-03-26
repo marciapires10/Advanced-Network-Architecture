@@ -1,0 +1,35 @@
+Jan 25 11:36:24.049 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 25 11:36:24.049 HYPERVISOR: Started on IP = localhost, TCP port = 40131.
+Jan 25 11:36:24.061 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 11:36:24.061 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 25 11:36:24.061 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 25 11:36:24.061 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/3da07520-c0cb-4240-96a7-cc55b5de2fbb 
+Jan 25 11:36:24.061 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/3da07520-c0cb-4240-96a7-cc55b5de2fbb
+Jan 25 11:36:24.061 HYPERVISOR: exec_cmd: vm create Arasaka_N 12 c7200 
+Jan 25 11:36:24.062 VM: VM Arasaka_N created.
+Jan 25 11:36:24.062 HYPERVISOR: exec_cmd: vm set_con_tcp_port Arasaka_N 5017 
+Jan 25 11:36:24.062 HYPERVISOR: exec_cmd: c7200 get_mac_addr Arasaka_N 
+Jan 25 11:36:24.062 HYPERVISOR: exec_cmd: vm get_status Arasaka_N 
+Jan 25 11:36:24.062 HYPERVISOR: exec_cmd: vm slot_add_binding Arasaka_N 0 0 C7200-IO-FE 
+Jan 25 11:36:24.063 HYPERVISOR: exec_cmd: vm set_disk0 Arasaka_N 0 
+Jan 25 11:36:24.063 HYPERVISOR: exec_cmd: vm get_status Arasaka_N 
+Jan 25 11:36:24.063 HYPERVISOR: exec_cmd: vm set_idle_pc Arasaka_N 0x6318687c 
+Jan 25 11:36:24.064 HYPERVISOR: exec_cmd: vm set_ios Arasaka_N /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 25 11:36:24.064 HYPERVISOR: exec_cmd: c7200 set_mac_addr Arasaka_N ca0c.1edf.0000 
+Jan 25 11:36:24.064 HYPERVISOR: exec_cmd: vm set_nvram Arasaka_N 512 
+Jan 25 11:36:24.064 HYPERVISOR: exec_cmd: vm set_ram Arasaka_N 512 
+Jan 25 11:36:24.065 HYPERVISOR: exec_cmd: vm get_status Arasaka_N 
+Jan 25 11:36:24.065 HYPERVISOR: exec_cmd: vm slot_remove_binding Arasaka_N 0 0 
+Jan 25 11:36:24.065 HYPERVISOR: exec_cmd: vm get_status Arasaka_N 
+Jan 25 11:36:24.065 HYPERVISOR: exec_cmd: vm slot_add_binding Arasaka_N 0 0 C7200-IO-2FE 
+Jan 25 11:36:24.065 HYPERVISOR: exec_cmd: vm get_status Arasaka_N 
+Jan 25 11:36:24.065 HYPERVISOR: exec_cmd: vm slot_add_binding Arasaka_N 1 0 PA-2FE-TX 
+Jan 25 11:36:31.329 HYPERVISOR: exec_cmd: nio create_udp udp-6b1c3f2f-7887-434b-ab59-2b84aa04ec86 10116 127.0.0.1 10117 
+Jan 25 11:36:31.543 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Arasaka_N 0 0 udp-6b1c3f2f-7887-434b-ab59-2b84aa04ec86 
+Jan 25 11:36:31.543 HYPERVISOR: exec_cmd: vm get_status Arasaka_N 
+Jan 25 11:36:31.668 HYPERVISOR: exec_cmd: nio create_udp udp-eef7652c-0c3f-42a6-a9eb-91e9931d99fb 10120 127.0.0.1 10121 
+Jan 25 11:36:31.669 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Arasaka_N 0 1 udp-eef7652c-0c3f-42a6-a9eb-91e9931d99fb 
+Jan 25 11:36:31.669 HYPERVISOR: exec_cmd: vm get_status Arasaka_N 
+Jan 25 11:36:32.426 HYPERVISOR: exec_cmd: nio create_udp udp-13c9f97a-ba9b-4127-a3ae-27d9e98679c5 10134 127.0.0.1 10135 
+Jan 25 11:36:32.428 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Arasaka_N 1 0 udp-13c9f97a-ba9b-4127-a3ae-27d9e98679c5 
+Jan 25 11:36:32.428 HYPERVISOR: exec_cmd: vm get_status Arasaka_N 

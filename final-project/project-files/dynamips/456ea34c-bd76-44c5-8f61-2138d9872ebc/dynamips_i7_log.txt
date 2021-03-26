@@ -1,0 +1,185 @@
+Jan 18 10:20:28.218 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 18 10:20:28.218 HYPERVISOR: Started on IP = localhost, TCP port = 47451.
+Jan 18 10:20:28.228 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 18 10:20:28.228 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 18 10:20:28.228 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 18 10:20:28.228 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/77c7ea47-133e-43e9-81f6-c573b8269dba 
+Jan 18 10:20:28.228 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/77c7ea47-133e-43e9-81f6-c573b8269dba
+Jan 18 10:20:28.229 HYPERVISOR: exec_cmd: vm create Militech_N 8 c7200 
+Jan 18 10:20:28.229 VM: VM Militech_N created.
+Jan 18 10:20:28.229 HYPERVISOR: exec_cmd: vm set_con_tcp_port Militech_N 5007 
+Jan 18 10:20:28.229 HYPERVISOR: exec_cmd: c7200 get_mac_addr Militech_N 
+Jan 18 10:20:28.229 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 10:20:28.229 HYPERVISOR: exec_cmd: vm slot_add_binding Militech_N 0 0 C7200-IO-FE 
+Jan 18 10:20:28.230 HYPERVISOR: exec_cmd: vm set_disk0 Militech_N 0 
+Jan 18 10:20:28.230 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 10:20:28.230 HYPERVISOR: exec_cmd: vm set_idle_pc Militech_N 0x6318687c 
+Jan 18 10:20:28.230 HYPERVISOR: exec_cmd: vm set_ios Militech_N /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 10:20:28.231 HYPERVISOR: exec_cmd: c7200 set_mac_addr Militech_N ca08.26e0.0000 
+Jan 18 10:20:28.231 HYPERVISOR: exec_cmd: vm set_nvram Militech_N 512 
+Jan 18 10:20:28.231 HYPERVISOR: exec_cmd: vm set_ram Militech_N 512 
+Jan 18 10:20:28.231 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 10:20:28.231 HYPERVISOR: exec_cmd: vm slot_remove_binding Militech_N 0 0 
+Jan 18 10:20:28.232 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 10:20:28.232 HYPERVISOR: exec_cmd: vm slot_add_binding Militech_N 0 0 C7200-IO-2FE 
+Jan 18 10:20:28.232 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 10:20:28.232 HYPERVISOR: exec_cmd: vm slot_add_binding Militech_N 1 0 PA-2FE-TX 
+Jan 18 10:20:32.490 HYPERVISOR: exec_cmd: nio create_udp udp-42602e5d-fd61-49ed-a3ed-ab6815f00768 10064 127.0.0.1 10065 
+Jan 18 10:20:32.703 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Militech_N 0 0 udp-42602e5d-fd61-49ed-a3ed-ab6815f00768 
+Jan 18 10:20:32.703 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 10:20:32.771 HYPERVISOR: exec_cmd: nio create_udp udp-a093ac65-a1db-4674-800b-b3e95aa626b1 10068 127.0.0.1 10069 
+Jan 18 10:20:32.772 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Militech_N 0 1 udp-a093ac65-a1db-4674-800b-b3e95aa626b1 
+Jan 18 10:20:32.772 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 10:20:56.573 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 10:20:56.573 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 10:20:56.573 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 10:20:56.574 HYPERVISOR: exec_cmd: vm set_config Militech_N configs/i8_startup-config.cfg configs/i8_private-config.cfg 
+Jan 18 10:20:56.574 HYPERVISOR: exec_cmd: vm start Militech_N 
+Jan 18 10:21:26.833 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 10:22:26.835 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 10:48:15.461 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 10:48:15.463 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 10:48:15.466 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 11:05:55.323 HYPERVISOR: exec_cmd: vm set_ios Militech_N /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 11:06:22.701 HYPERVISOR: exec_cmd: vm set_ios Militech_N /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 11:09:31.192 HYPERVISOR: exec_cmd: vm set_ios Militech_N /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 18 11:10:31.884 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 11:10:31.884 HYPERVISOR: exec_cmd: vm stop Militech_N 
+Jan 18 11:10:31.997 VM: VM Militech_N shutdown.
+Jan 18 11:10:31.998 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 11:10:40.558 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 11:10:40.563 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:10:40.564 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 11:10:40.568 HYPERVISOR: exec_cmd: vm set_config Militech_N configs/i8_startup-config.cfg configs/i8_private-config.cfg 
+Jan 18 11:10:40.574 HYPERVISOR: exec_cmd: vm start Militech_N 
+Jan 18 11:14:21.477 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 11:14:21.479 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:14:21.480 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 11:30:37.035 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 11:30:37.037 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:30:37.040 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 11:42:30.101 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 11:42:30.102 HYPERVISOR: exec_cmd: vm stop Militech_N 
+Jan 18 11:42:30.194 VM: VM Militech_N shutdown.
+Jan 18 11:42:30.197 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 11:42:56.230 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 11:42:56.242 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:42:56.244 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 11:42:56.245 HYPERVISOR: exec_cmd: vm set_config Militech_N configs/i8_startup-config.cfg configs/i8_private-config.cfg 
+Jan 18 11:42:56.246 HYPERVISOR: exec_cmd: vm start Militech_N 
+Jan 18 11:49:54.949 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 11:49:54.950 HYPERVISOR: exec_cmd: vm stop Militech_N 
+Jan 18 11:49:55.046 VM: VM Militech_N shutdown.
+Jan 18 11:49:55.047 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 11:50:00.040 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 11:50:00.046 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 11:50:00.062 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 11:50:00.078 HYPERVISOR: exec_cmd: vm set_config Militech_N configs/i8_startup-config.cfg configs/i8_private-config.cfg 
+Jan 18 11:50:00.087 HYPERVISOR: exec_cmd: vm start Militech_N 
+Jan 18 12:00:20.461 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 12:00:20.463 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 12:00:20.464 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 12:10:16.458 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 12:10:16.460 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 12:10:16.462 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 12:21:28.158 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 12:21:28.159 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 12:21:28.159 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 12:25:07.096 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 12:25:07.102 HYPERVISOR: exec_cmd: vm stop Militech_N 
+Jan 18 12:25:07.197 VM: VM Militech_N shutdown.
+Jan 18 12:25:07.198 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 12:25:17.609 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 12:25:17.619 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 12:25:17.621 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 12:25:17.634 HYPERVISOR: exec_cmd: vm set_config Militech_N configs/i8_startup-config.cfg configs/i8_private-config.cfg 
+Jan 18 12:25:17.635 HYPERVISOR: exec_cmd: vm start Militech_N 
+Jan 18 14:41:34.793 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 14:41:34.795 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 14:41:34.796 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 15:12:26.126 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 15:12:26.126 HYPERVISOR: exec_cmd: vm stop Militech_N 
+Jan 18 15:12:26.218 VM: VM Militech_N shutdown.
+Jan 18 15:12:26.219 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 15:12:33.288 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 15:12:33.288 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 15:12:33.289 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 15:12:33.289 HYPERVISOR: exec_cmd: vm set_config Militech_N configs/i8_startup-config.cfg configs/i8_private-config.cfg 
+Jan 18 15:12:33.289 HYPERVISOR: exec_cmd: vm start Militech_N 
+Jan 18 15:14:10.941 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 15:14:10.942 HYPERVISOR: exec_cmd: vm stop Militech_N 
+Jan 18 15:14:11.063 VM: VM Militech_N shutdown.
+Jan 18 15:14:11.064 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 15:17:52.630 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 15:17:52.631 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 15:17:52.633 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 15:17:52.634 HYPERVISOR: exec_cmd: vm set_config Militech_N configs/i8_startup-config.cfg configs/i8_private-config.cfg 
+Jan 18 15:17:52.634 HYPERVISOR: exec_cmd: vm start Militech_N 
+Jan 18 15:20:34.580 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 15:20:34.581 HYPERVISOR: exec_cmd: vm stop Militech_N 
+Jan 18 15:20:34.688 VM: VM Militech_N shutdown.
+Jan 18 15:20:34.692 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 15:21:01.256 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 15:21:01.257 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 15:21:01.257 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 15:21:01.257 HYPERVISOR: exec_cmd: vm set_config Militech_N configs/i8_startup-config.cfg configs/i8_private-config.cfg 
+Jan 18 15:21:01.257 HYPERVISOR: exec_cmd: vm start Militech_N 
+Jan 18 19:16:24.238 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 19:16:24.240 HYPERVISOR: exec_cmd: vm stop Militech_N 
+Jan 18 19:16:24.338 VM: VM Militech_N shutdown.
+Jan 18 19:16:24.339 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 19:16:37.278 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 19:16:37.279 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 19:16:37.280 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 19:16:37.280 HYPERVISOR: exec_cmd: vm set_config Militech_N configs/i8_startup-config.cfg configs/i8_private-config.cfg 
+Jan 18 19:16:37.280 HYPERVISOR: exec_cmd: vm start Militech_N 
+Jan 18 19:19:41.654 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 19:19:41.654 HYPERVISOR: exec_cmd: vm stop Militech_N 
+Jan 18 19:19:41.760 VM: VM Militech_N shutdown.
+Jan 18 19:19:41.761 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 19:20:13.359 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 19:20:13.361 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 19:20:13.361 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 19:20:13.361 HYPERVISOR: exec_cmd: vm set_config Militech_N configs/i8_startup-config.cfg configs/i8_private-config.cfg 
+Jan 18 19:20:13.362 HYPERVISOR: exec_cmd: vm start Militech_N 
+Jan 18 19:20:47.284 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 19:20:47.292 HYPERVISOR: exec_cmd: vm stop Militech_N 
+Jan 18 19:20:47.490 VM: VM Militech_N shutdown.
+Jan 18 19:20:47.497 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 19:21:33.065 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 19:21:33.066 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 19:21:33.066 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 19:21:33.067 HYPERVISOR: exec_cmd: vm set_config Militech_N configs/i8_startup-config.cfg configs/i8_private-config.cfg 
+Jan 18 19:21:33.067 HYPERVISOR: exec_cmd: vm start Militech_N 
+Jan 18 19:24:33.317 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 20:21:59.231 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 20:21:59.235 HYPERVISOR: exec_cmd: vm stop Militech_N 
+Jan 18 20:21:59.326 VM: VM Militech_N shutdown.
+Jan 18 20:21:59.326 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 20:23:16.961 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 20:23:16.961 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 20:23:16.962 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 20:23:16.962 HYPERVISOR: exec_cmd: vm set_config Militech_N configs/i8_startup-config.cfg configs/i8_private-config.cfg 
+Jan 18 20:23:16.962 HYPERVISOR: exec_cmd: vm start Militech_N 
+Jan 18 20:50:47.320 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 20:58:52.843 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 20:58:52.846 HYPERVISOR: exec_cmd: vm stop Militech_N 
+Jan 18 20:58:52.951 VM: VM Militech_N shutdown.
+Jan 18 20:58:52.952 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 21:41:32.795 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 21:41:32.796 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 21:41:32.796 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 21:41:32.797 HYPERVISOR: exec_cmd: vm set_config Militech_N configs/i8_startup-config.cfg configs/i8_private-config.cfg 
+Jan 18 21:41:32.797 HYPERVISOR: exec_cmd: vm start Militech_N 
+Jan 18 22:15:02.501 HYPERVISOR: exec_cmd: vm set_ghost_status Militech_N 2 
+Jan 18 22:15:02.502 HYPERVISOR: exec_cmd: vm set_ghost_file Militech_N /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 18 22:15:02.503 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 22:40:35.823 HYPERVISOR: exec_cmd: vm get_status Militech_N 
+Jan 18 22:40:35.825 HYPERVISOR: exec_cmd: vm stop Militech_N 
+Jan 18 22:40:35.947 VM: VM Militech_N shutdown.
+Jan 18 22:40:35.959 HYPERVISOR: exec_cmd: vm extract_config Militech_N 
+Jan 18 22:40:35.974 HYPERVISOR: exec_cmd: vm delete Militech_N 
+Jan 18 22:40:35.975 VM: VM Militech_N destroyed.
+Jan 18 22:40:36.005 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 18 22:40:36.147 HYPERVISOR: Stopped.
+Jan 18 22:40:36.147 GENERAL: reset done.

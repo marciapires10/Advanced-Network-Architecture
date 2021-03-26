@@ -1,0 +1,32 @@
+Jan 25 11:36:23.624 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 25 11:36:23.624 HYPERVISOR: Started on IP = localhost, TCP port = 40465.
+Jan 25 11:36:23.634 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 25 11:36:23.634 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips 
+Jan 25 11:36:23.634 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips
+Jan 25 11:36:23.635 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/1b53457c-e861-4861-82ec-2b7872becaf2 
+Jan 25 11:36:23.635 GENERAL: working_dir=/home/marciapires/Desktop/Universidade/4Ano/ARA/Project/final-project/project-files/dynamips/1b53457c-e861-4861-82ec-2b7872becaf2
+Jan 25 11:36:23.635 HYPERVISOR: exec_cmd: vm create Westbrook 3 c7200 
+Jan 25 11:36:23.635 VM: VM Westbrook created.
+Jan 25 11:36:23.635 HYPERVISOR: exec_cmd: vm set_con_tcp_port Westbrook 5002 
+Jan 25 11:36:23.635 HYPERVISOR: exec_cmd: c7200 get_mac_addr Westbrook 
+Jan 25 11:36:23.636 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 25 11:36:23.636 HYPERVISOR: exec_cmd: vm slot_add_binding Westbrook 0 0 C7200-IO-FE 
+Jan 25 11:36:23.636 HYPERVISOR: exec_cmd: vm set_disk0 Westbrook 0 
+Jan 25 11:36:23.636 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 25 11:36:23.637 HYPERVISOR: exec_cmd: vm set_idle_pc Westbrook 0x6318687c 
+Jan 25 11:36:23.637 HYPERVISOR: exec_cmd: vm set_ios Westbrook /home/marciapires/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 25 11:36:23.638 HYPERVISOR: exec_cmd: c7200 set_mac_addr Westbrook ca03.214d.0000 
+Jan 25 11:36:23.638 HYPERVISOR: exec_cmd: vm set_nvram Westbrook 512 
+Jan 25 11:36:23.638 HYPERVISOR: exec_cmd: vm set_ram Westbrook 512 
+Jan 25 11:36:23.638 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 25 11:36:23.639 HYPERVISOR: exec_cmd: vm slot_remove_binding Westbrook 0 0 
+Jan 25 11:36:23.639 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 25 11:36:23.639 HYPERVISOR: exec_cmd: vm slot_add_binding Westbrook 0 0 C7200-IO-2FE 
+Jan 25 11:36:23.639 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 25 11:36:23.639 HYPERVISOR: exec_cmd: vm slot_add_binding Westbrook 1 0 PA-2FE-TX 
+Jan 25 11:36:26.212 HYPERVISOR: exec_cmd: nio create_udp udp-f8301e8f-9a93-4671-a006-0b393dbbba56 10016 127.0.0.1 10017 
+Jan 25 11:36:26.424 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Westbrook 0 1 udp-f8301e8f-9a93-4671-a006-0b393dbbba56 
+Jan 25 11:36:26.424 HYPERVISOR: exec_cmd: vm get_status Westbrook 
+Jan 25 11:36:26.870 HYPERVISOR: exec_cmd: nio create_udp udp-bbffdd30-0404-41ba-b7ad-fb48cf082fc8 10026 127.0.0.1 10027 
+Jan 25 11:36:26.871 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Westbrook 0 0 udp-bbffdd30-0404-41ba-b7ad-fb48cf082fc8 
+Jan 25 11:36:26.872 HYPERVISOR: exec_cmd: vm get_status Westbrook 
